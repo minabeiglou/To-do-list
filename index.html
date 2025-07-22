@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To DO List</title>
+  <link rel="stylesheet" href="./style/style.css" />
+
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>لیست کارها</h1>
+    </div>
+
+    <div class="header-buttons">
+      <div class="sort-card">
+        <button class="sort-button">
+          <span id="current-filter">همه</span>
+        </button>
+        <div class="sort-menu hidden">
+          <button value="all">همه</button>
+          <button value="learning">یادگیری</button>
+          <button value="general">عمومی</button>
+          <button value="personal">شخصی</button>
+        </div>
+      </div>
+      <button class="open-modal-button">+ افزودن</button>
+    </div>
+
+    <div class="todos-container">
+      <!-- Tasks  -->
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-screen hidden">
+    <div class="modal">
+      <header>
+        <button class="close-modal-x">X</button>
+        <span>ایجاد کار جدید</span>
+      </header>
+      <main>
+        <div class="input-card">
+          <input type="text" class="input" placeholder="کار جدید را وارد کنید" />
+          <select class="category-select">
+            <option value="learning">یادگیری</option>
+            <option value="general">عمومی</option>
+            <option value="personal">شخصی</option>
+          </select>
+        </div>
+      </main>
+      <footer>
+        <button class="cancel">انصراف</button>
+        <button class="create">ایجاد</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
